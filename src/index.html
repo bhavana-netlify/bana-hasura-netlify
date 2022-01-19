@@ -37,7 +37,18 @@
   }
 </style>
 
-<h1>This Is a Demo of the Demo</h1>
+<h1>This Is a List of Users and their GH usernames</h1>
+
+{% for user in users %}
+  <p>{{user.id}}: {{user.name}} and {{user.githubUsername}} </p>
+{% endfor %}
+
+<script>
+  
+
+  getUsers();
+  
+</script>
 
 <div class="wrapper">
   <h2 contenteditable spellcheck="false">boop.</h2>
